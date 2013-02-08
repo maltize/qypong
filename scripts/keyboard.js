@@ -18,7 +18,7 @@ function onKeyDown(evt) {
 function onKeyUp(evt) {
   if (evt.keyCode == keyUP || evt.keyCode == keyA) upDown = false;
   else if (evt.keyCode == keyDOWN || evt.keyCode == keyZ) downDown = false;
-  else if (evt.keyCode == keySPACE || evt.keyCode == keyX) spacePressed = true;
+  else if ((evt.keyCode == keySPACE || evt.keyCode == keyX) && !is_ball_moving()) spacePressed = true;
 }
 
 function reset_pressed_key() {
