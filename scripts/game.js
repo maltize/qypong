@@ -16,11 +16,6 @@ function next_level(player_no) {
 }
 
 function draw_field() {
-  line(0, 0, WIDTH, 0);
-  line(0, HEIGHT, WIDTH, HEIGHT);
-  line(0, 0, 0, HEIGHT);
-  line(WIDTH, 0, WIDTH, HEIGHT);
-
   image(qype_logo, field_lines[0] + 10, HEIGHT / 2 - 30);
   image(yelp_logo, field_lines[1] - 100 - 10, HEIGHT / 2 - 30);
 }
