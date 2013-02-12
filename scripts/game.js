@@ -16,10 +16,10 @@ function next_level(player_no) {
 }
 
 function draw_field() {
-  image(qype_logo, field_lines[0] + 10, HEIGHT / 2 - 30);
-  image(yelp_logo, field_lines[1] - 100 - 10, HEIGHT / 2 - 30);
+  image(qype_logo, field_lines[0], HEIGHT / 2 - 30);
+  image(yelp_logo, field_lines[1] - 100, HEIGHT / 2 - 30);
 
-  text(WIDTH / 2, (HEIGHT / 4) * 3, "Let's play together", "middle", 20);
+  text(WIDTH / 2, (HEIGHT / 4) * 3, "Qype and Yelp now play together!", "center", "middle", 12);
 }
 
 function shot_ball() {
@@ -111,7 +111,7 @@ function draw() {
 }
 
 function print_score() {
-  text(WIDTH / 2 - 20, HEIGHT / 2, scores[0], "middle", 20);
-  text(WIDTH / 2, HEIGHT / 2, ":", "middle", 20);
-  text(WIDTH / 2 + 20, HEIGHT / 2, scores[1], "middle", 20);
+  text(WIDTH / 2 - 5, HEIGHT / 2 - 3, scores[0], "right", "middle", 16);
+  text(WIDTH / 2, HEIGHT / 2 - 3, ":", "center", "middle", 16);
+  text(WIDTH / 2 + 5, HEIGHT / 2 - 3, scores[1], "left", "middle", 16);
 }

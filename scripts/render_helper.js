@@ -33,9 +33,9 @@ function line(sx,sy,ex,ey,color) {
   ctx.stroke();
 }
 
-function text(x,y,text,baseline,size) {
-  ctx.font = "bold " + size + "px sans-serif";
-  ctx.textAlign = "center";
+function text(x,y,text,align,baseline,size) {
+  ctx.font = "bold " + size + "px Emulogic";
+  ctx.textAlign = align;
   ctx.textBaseline = baseline;
   ctx.fillText(text,x,y);
 }
